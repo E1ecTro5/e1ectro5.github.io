@@ -2,4 +2,64 @@
     margin: 0;
     padding: 0;
     font-family: Ubuntu;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar {
+    background-color: rgb(16,44,84);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.7em;
+    padding-inline: 2em;
+
+    font-size: 1.2em;
+}
+
+.navbar-items {
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.nav-button {
+    display: none;
+}
+
+.navbar-items li {
+    margin-inline: 1em;
+}
+
+.navbar a, .navbar-items a {
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .navbar-items {
+        display: none;
+    }
+    
+    .nav-button {
+        display: block;
+        width: 2em;
+        height: 2em;
+    }
+
+    .drop:hover .navbar-items {
+        display: block;
+        position: absolute;
+        top: 3em;
+        right: 0px;
+        background-color: rgb(16,44,84);
+    }
+
+    .drop:hover .navbar-items li {
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+    }
 }
