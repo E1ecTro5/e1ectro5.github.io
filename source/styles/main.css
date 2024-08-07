@@ -39,6 +39,54 @@
     text-decoration: none;
 }
 
+.welcome {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg-img-container {
+    display: block; 
+    width: 100%;
+}
+
+.bg-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.dark-filter {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.welcome-text {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 1em;
+
+    font-size: 3em;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .welcome-text {
+        text-align: center;
+        font-size: 2.2em;
+        top: 30%;
+        left: 0;
+    }
+}
+
 @media (max-width: 800px) {
     .navbar-items {
         display: none;
@@ -61,5 +109,11 @@
     .drop:hover .navbar-items li {
         margin-top: 0.4em;
         margin-bottom: 0.4em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bg-img-container img {
+        width: 1200px;
     }
 }
