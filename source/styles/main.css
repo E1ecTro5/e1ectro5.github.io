@@ -47,20 +47,20 @@
     overflow: hidden;
 }
 
-.bg-img-container {
+.main-bg-img-container {
     display: block; 
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-.bg-img-container img {
+.main-bg-img-container img {
     width: 100%;
     height: 100%;
     margin-bottom: -0.2em;
 }
 
-.bg-img-container>.dark-filter {
+.dark-filter {
     display: block;
     position: absolute;
     top: 0;
@@ -70,6 +70,15 @@
     max-height: 100%;
 
     background-color: rgba(0, 0, 0, 0.521);
+}
+
+.section-bg-img-container {
+    position: absolute;
+    height: 100%;
+}
+
+.section-bg-img-container img {
+    width: 100%;
 }
 
 .welcome-text {
@@ -151,7 +160,6 @@
 
 .skills-content {
     display: grid;
-    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -190,7 +198,7 @@
     padding-left: 1em;
     font-size: 1.3em;
     color: rgb(199, 199, 199);
-    }
+}
 
 .persona-info {
     padding: 1em;
@@ -257,13 +265,8 @@
     text-align: center;
 }
 
-/* .someimg {
-    position: absolute;
-    height: 100%;
-} */
-
 @media (max-width: 1200px) {
-    .bg-img-container img {
+    .main-bg-img-container img {
         width: 1200px;
     }
 }
@@ -330,6 +333,11 @@
     .projects-content {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    .section-bg-img-container img {
+        height: 100%;
+        width: auto;
     }
 }
 
