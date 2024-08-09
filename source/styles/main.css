@@ -320,6 +320,17 @@
     padding-left: 0.8em;
 }
 
+.end {
+    background-color: rgb(17, 17, 17);
+    padding: 1em;
+    text-align: center;
+}
+
+.end p {
+    color: gray;
+    font-size: 0.9em;
+}
+
 @media (max-width: 1200px) {
     .main-bg-img-container img {
         width: 1200px;
@@ -436,6 +447,10 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
+    }
+
+    .end p {
+        font-size: 0.6em;
     }
 }
 
