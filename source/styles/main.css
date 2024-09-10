@@ -71,6 +71,7 @@ header>.holder {
 
 .welcome-text>p {
     font-size: 2em;
+    margin-top: 0.2em;
 }
 
 @media (max-width: 1200px) {
@@ -80,7 +81,22 @@ header>.holder {
 }
 
 @media (max-width: 700px) {
-    .img-container>img {
-        width: 800px;
+    /* Тут была идея сделать выпадающий список,
+    но его потом по-дргуому реализую */
+    .navbar-items {
+        display: none;
+    }
+
+    .welcome-text {
+        text-align: center;
+    }
+
+    .welcome-text>h4 {
+        font-size: 2.5em;
+    }
+
+    .welcome-text>p {
+        margin-top: 0.5em;
+        font-size: 1.5em;
     }
 }
