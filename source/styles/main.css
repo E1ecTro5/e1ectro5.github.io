@@ -7,6 +7,8 @@
     color: white;
 }
 
+/* Header-welcome section */
+
 header>.holder {
     display: block; 
     position: relative;
@@ -74,9 +76,104 @@ header>.holder {
     margin-top: 0.2em;
 }
 
+/* Skills section */
+
+.skills {
+    padding-bottom: 5em;
+    background-color: #111111;
+}
+
+.skills>.holder {
+
+}
+
+.skill-container {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+
+.skill-container>.text {
+    text-align: center;
+}
+
+.skill-container>.text>h4 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+.skill-container>.text>p {
+    font-size: 1.6em;
+    margin-top: 0.2em;
+}
+
+.skill-container>img {
+    margin-block: 0.2em;
+    max-width: 256px;
+}
+
+.skills>.holder {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr 1fr 4fr;
+    justify-items: center;
+    margin-inline: 2em;
+}
+
+.skills>.holder>.card {
+    text-align: center;
+    padding: 0.1em;
+}
+
+.skills>.holder>.card>h4 {
+    margin-block: 0.2em;
+    font-size: 3em;
+}
+
+.skills>.holder>.card>img {
+    max-width: 200px;
+}
+
+.skills>.holder>.card>ul {
+    text-align: start;
+}
+
+/* Multi-usable classes */
+
+.header {
+    display: block;
+    text-align: center;
+    padding: 3em;
+}
+
+.header>h4 {
+    font-family: Playwrite CU;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+.line-vertical {
+    border: 0;
+    width: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
 @media (max-width: 1200px) {
     .img-container>img {
         width: 1200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .skills>.holder {
+        display: grid;
+        grid-template-rows: 4fr 4fr 4fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-inline: 2em;
+    }
+
+    .line-vertical {
+        display: none;
     }
 }
 
