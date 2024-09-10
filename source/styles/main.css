@@ -83,10 +83,6 @@ header>.holder {
     background-color: #111111;
 }
 
-.skills>.holder {
-
-}
-
 .skill-container {
     display: flex;
     align-items: center;
