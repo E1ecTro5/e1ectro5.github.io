@@ -83,31 +83,6 @@ header>.holder {
     background-color: #111111;
 }
 
-.skill-container {
-    display: flex;
-    align-items: center;
-    padding: 2em;
-}
-
-.skill-container>.text {
-    text-align: center;
-}
-
-.skill-container>.text>h4 {
-    font-size: 3em;
-    margin-bottom: 0.2em;
-}
-
-.skill-container>.text>p {
-    font-size: 1.6em;
-    margin-top: 0.2em;
-}
-
-.skill-container>img {
-    margin-block: 0.2em;
-    max-width: 256px;
-}
-
 .skills>.holder {
     display: grid;
     grid-template-columns: 4fr 1fr 4fr 1fr 4fr;
@@ -126,7 +101,8 @@ header>.holder {
 }
 
 .skills>.holder>.card>img {
-    max-width: 200px;
+    max-width: 150px;
+    margin-block: 1em;
 }
 
 .skills>.holder>.card>ul {
