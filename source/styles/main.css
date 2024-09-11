@@ -126,7 +126,8 @@ header>.holder {
 }
 
 .skills>.holder>.card>img {
-    max-width: 200px;
+    max-width: 150px;
+    margin-block: 1em;
 }
 
 .skills>.holder>.card>ul {
