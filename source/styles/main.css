@@ -109,6 +109,50 @@ header>.holder {
     text-align: start;
 }
 
+/* Projects section */
+
+.projects {
+    padding-bottom: 2em;
+    background-color: #f7f7f7;
+}
+
+.projects>.header>h4 {
+    color: black;
+}
+
+.projects>.holder {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr 1fr 4fr;
+    justify-items: center;
+    margin-inline: 2em;
+}
+
+.projects>.holder>.line-vertical {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.projects>.holder>a>.card {
+    padding-block: 1em;
+}
+
+.projects>.holder>a>.card>img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.projects>.holder>a>.card>h4 {
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    margin-block: 1em;
+}
+
+.projects>.holder>a>.card>p {
+    color: black;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
 /* Multi-usable classes */
 
 .header {
@@ -129,6 +173,8 @@ header>.holder {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
+/* Mobile optimization */
+
 @media (max-width: 1200px) {
     .img-container>img {
         width: 1200px;
@@ -146,6 +192,14 @@ header>.holder {
 
     .line-vertical {
         display: none;
+    }
+
+    .projects>.holder {
+        display: grid;
+        grid-template-rows: 4fr 4fr 4fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-inline: 2em;
     }
 }
 
