@@ -173,6 +173,31 @@ header>.holder {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
+/* Footer, contacts section */
+
+footer>.holder {
+    display: flex;
+    background-color: #111111;
+
+    padding: 1em;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts>a {
+    margin-inline: 1em;
+    text-decoration: none;
+}
+
+.contacts>a>img {
+    max-width: 32px;
+}
+
+.rights {
+    margin-inline: 1em;
+}
+
 /* Mobile optimization */
 
 @media (max-width: 1200px) {
@@ -221,5 +246,15 @@ header>.holder {
     .welcome-text>p {
         margin-top: 0.5em;
         font-size: 1.5em;
+    }
+
+    footer>.holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        row-gap: 0.5em;
+
+        text-align: center;
     }
 }
