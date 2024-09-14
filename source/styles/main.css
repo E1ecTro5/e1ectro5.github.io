@@ -109,6 +109,10 @@ header>.holder {
     text-align: start;
 }
 
+.skills>.holder>.card>ul>li {
+    margin-block: 0.2em;
+}
+
 /* Projects section */
 
 .projects {
