@@ -3,452 +3,271 @@
     padding: 0;
     font-family: Ubuntu;
     font-weight: bold;
+
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Header-welcome section */
+
+header>.holder {
+    display: block; 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-container {
+    display: block; 
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-container>img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -0.2em;
+}
+
 .navbar {
-    background-color: rgb(16,44,84);
-
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-    padding: 0.7em;
-    padding-inline: 2em;
+    width: 100%;
+    justify-content: space-between;
 
     font-size: 1.2em;
+}
+
+.navbar>p {
+    padding: 2em;
+    font-family: Playwrite CU;
 }
 
 .navbar-items {
     display: flex;
-    padding: 0.5em;
-    justify-content: space-between;
 
-    list-style: none;
+    padding: 2em;
 }
 
-.nav-button {
-    display: none;
-}
-
-.navbar-items li {
-    margin-inline: 1em;
-}
-
-.navbar a, .navbar-items a {
+.navbar-items>a {
     text-decoration: none;
-}
-
-.welcome {
-    display: block; 
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.main-bg-img-container {
-    display: block; 
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.main-bg-img-container img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: -0.2em;
-}
-
-.dark-filter {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.616);
-}
-
-.section-bg-img-container {
-    position: absolute;
-    height: 100%;
-}
-
-.section-bg-img-container img {
-    width: 100%;
+    padding-inline: 1em;
+    font-family: Playwrite CU;
 }
 
 .welcome-text {
-    display: block;
-    position: absolute;
-    top: 40%;
-    left: 1em;
-
-    font-size: 3em;
-    color: white;
-}
-
-.about {
-    display: block; 
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-/* P.S: this could be used in other sections too. */
-.cont-header {
-    background-color: rgb(16,44,84);
-
-    text-align: center;
-    font-size: 4em;
-    padding: 0.3em;
-}
-
-.about-content {
-    display: grid;
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    grid-template-rows: 1fr;
-    grid-template-columns: 4fr 8fr;
-}
-
-.persona-img {
-    width: 100%;
-}
-
-.persona-img img {
-    width: 100%;
-    margin-bottom: -0.2em;
-}
-
-.persona-info {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-
-    padding: 3em;
-
-    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 4%;
 }
 
-.persona-info h2 {
+.welcome-text>h4 {
     font-size: 3em;
-    padding: 0.3em;
-    color: rgb(16,44,84);
 }
 
-.persona-info p {
-    color: rgb(16,44,84);
+.welcome-text>p {
     font-size: 2em;
+    margin-top: 0.2em;
 }
+
+/* Skills section */
 
 .skills {
-    display: block; 
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    padding-bottom: 5em;
+    background-color: #111111;
 }
 
-.skills-content {
+.skills>.holder {
     display: grid;
-    width: 100%;
-    top: 0;
-    left: 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 1fr 4fr 1fr 4fr;
+    justify-items: center;
+    margin-inline: 2em;
+}
 
+.skills>.holder>.card {
     text-align: center;
+    padding: 0.1em;
 }
 
-.skill-container {
-    margin: 2em;
-}
-
-.skill-container>.upper-card>p {
-    background: rgba(67, 67, 104, 0.384);
-    backdrop-filter: blur(5px);
+.skills>.holder>.card>h4 {
+    margin-block: 0.2em;
     font-size: 3em;
-    border-radius: 0.4em;
-    padding: 0.4em;
 }
 
-.skill-container>.lower-card {
-    background: rgba(67, 67, 104, 0.384);
-    backdrop-filter: blur(5px);
-    margin-top: 1em;
-    border-radius: 1em;
-    padding: 1em;
+.skills>.holder>.card>img {
+    max-width: 150px;
+    margin-block: 1em;
 }
 
-.skill-container>.lower-card>ul {
-    list-style-position: inside;
-}
-
-.skill-container>.lower-card>ul>li {
+.skills>.holder>.card>ul {
     text-align: start;
-    padding-left: 1em;
-    font-size: 1.3em;
-    color: rgb(199, 199, 199);
 }
+
+.skills>.holder>.card>ul>li {
+    margin-block: 0.2em;
+}
+
+/* Projects section */
 
 .projects {
-    display: block; 
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    padding-bottom: 2em;
+    background-color: #f7f7f7;
 }
 
-.projects-content {
+.projects>.header>h4 {
+    color: black;
+}
+
+.projects>.holder {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(87, 87, 87);
+    grid-template-columns: 4fr 1fr 4fr 1fr 4fr;
+    justify-items: center;
+    margin-inline: 2em;
 }
 
-.project-container {
-    padding: 0em;
-    margin: 1em;
-    border-radius: 2em;
-    background-color: rgba(53, 56, 87, 0.192);
-    backdrop-filter: blur(5px);
+.projects>.holder>.line-vertical {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.project-card {
+.projects>.holder>a>.card {
+    padding-block: 1em;
+}
+
+.projects>.holder>a>.card>img {
     width: 100%;
+    border-radius: 15px;
 }
 
-.project-card img {
-    width: 100%;
-    border-radius: 2em;
-}
-
-.project-card h4 {
-    margin-top: 0.2em;
+.projects>.holder>a>.card>h4 {
+    color: black;
+    font-size: 1.5em;
     text-align: center;
+    margin-block: 1em;
+}
+
+.projects>.holder>a>.card>p {
+    color: black;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/* Multi-usable classes */
+
+.header {
+    display: block;
+    text-align: center;
+    padding: 3em;
+}
+
+.header>h4 {
+    font-family: Playwrite CU;
     font-size: 2em;
+    letter-spacing: 3px;
 }
 
-.project-card p {
+.line-vertical {
+    border: 0;
+    width: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+/* Footer, contacts section */
+
+footer>.holder {
+    display: flex;
+    background-color: #111111;
+
     padding: 1em;
+    
+    justify-content: space-between;
+    align-items: center;
 }
 
-.project-card a {
+.contacts>a {
+    margin-inline: 1em;
     text-decoration: none;
 }
 
-.project-link {
-    padding: 0.4em;
+.contacts>a>img {
+    max-width: 32px;
+}
+
+.rights {
     margin-inline: 1em;
-    margin-bottom: 1em;
-    background-color: rgb(97, 105, 212);
-    border-radius: 1em;
-    width: fit-content;
-    text-align: center;
-
 }
 
-.project-link p {
-    text-align: center;
-}
-
-.contacts {
-    display: block; 
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.contacts-content {
-    background-color: rgb(34, 35, 36);
-    width: 100%;
-}
-
-.contacts-content p {
-    text-align: center;
-    padding: 1em;
-    font-size: 1.2em;
-}
-
-.contacts-links {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 100%;
-}
-
-.contacts-links a {
-    width: 100%;
-}
-
-.contact-container {
-    display: block;
-
-    margin: 0.9em;
-    background-color: rgb(238, 238, 238);
-
-    border-radius: 1em;
-    border-color: rgb(238, 238, 238);
-    border-style: solid;
-    border-width: 0.1em;
-}
-
-.contact-container p {
-    color: black;
-    font-size: 1em;
-}
-
-.contact-container img {
-    position: absolute;
-    width: 32px;
-
-    padding-top: 0.6em;
-    padding-left: 0.8em;
-}
-
-.end {
-    background-color: rgb(17, 17, 17);
-    padding: 1em;
-    text-align: center;
-}
-
-.end p {
-    color: gray;
-    font-size: 0.9em;
-}
+/* Mobile optimization */
 
 @media (max-width: 1200px) {
-    .main-bg-img-container img {
+    .img-container>img {
         width: 1200px;
     }
 }
 
 @media (max-width: 1000px) {
-    .contacts-links {
+    .skills>.holder {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 4fr 4fr 4fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-inline: 2em;
     }
-}
 
-@media (max-width: 920px) {
-    .persona-img {
+    .line-vertical {
         display: none;
     }
 
-    .about-content {
-        grid-template-columns: 12fr;
-    }
-}
-
-@media (max-width: 800px) {
-    .navbar-items {
-        display: none;
-    }
-    
-    .nav-button {
-        display: block;
-        width: 2em;
-        height: 2em;
-    }
-
-    .drop:hover .navbar-items {
-        display: block;
-        position: absolute;
-        top: 3em;
-        right: 0px;
-        background-color: rgb(16,44,84);
-
-        /* я не продумал, что на каком слою будет,
-        поэтому пускай пока будет 10 */
-        z-index: 10;
-    }
-
-    .drop:hover .navbar-items li {
-        margin-top: 0.4em;
-        margin-bottom: 0.4em;
-    }
-
-    .persona-info p {
-        font-size: 1.5em;
-    }
-
-    .skills-content {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .skill-container {
-        margin: 1em;
-    }
-
-    .skill-container>.upper-card>p {
-        font-size: 2em;
-    }
-
-    .skill-container>.lower-card>ul>li {
-        font-size: 1em;
-    }
-
-    .projects-content {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .section-bg-img-container img {
-        height: 100%;
-        width: auto;
+    .projects>.holder {
+        display: grid;
+        grid-template-rows: 4fr 4fr 4fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-inline: 2em;
     }
 }
 
 @media (max-width: 700px) {
+    /* Тут была идея сделать выпадающий список,
+    но его потом по-дргуому реализую */
+    .navbar-items {
+        display: none;
+    }
+
     .welcome-text {
         text-align: center;
-        font-size: 2.2em;
-        top: 30%;
-        left: 0;
-    }
-}
-
-@media (max-width: 600px) {
-    .cont-header {
-        font-size: 2em;
     }
 
-    .persona-info p {
-        font-size: 1em;
+    .welcome-text>h4 {
+        font-size: 2.5em;
     }
 
-    .skills-content {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+    .welcome-text>p {
+        margin-top: 0.5em;
+        font-size: 1.5em;
     }
 
-    .projects-content {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .contacts-links {
+    footer>.holder {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-    }
+        grid-template-rows: 1fr 1fr;
 
-    .end p {
-        font-size: 0.6em;
-    }
-}
+        row-gap: 0.5em;
 
-@media (max-width: 400px) {
+        text-align: center;
+    }
 }

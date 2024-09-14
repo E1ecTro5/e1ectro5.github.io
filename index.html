@@ -12,207 +12,129 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="navbar">
-            <a href="https://e1ectro5.github.io">ElecTro</a>
+        <div class="holder">
+            <div class="img-container">
+                <img src="source/images/backgrounds/bg-effected.jpg" alt="">
+            </div>
 
-            <div class="drop">
-                <ul class="navbar-items">
-                    <li><a href="#welcome">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
+            <div class="navbar">
+                <p>ElecTro</p>
+                <div class="drop">
+                    <div class="navbar-items">
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contacts">Contacts</a>
+                    </div>
+                </div>
 
-                <img src="source/images/icons/menu.png" alt="..." class="nav-button">
+            </div>
+
+            <div class="welcome-text">
+                <h4>Peace be upon you, stranger.</h4>
+                <p>I am ElecTro, a beginner developer.</p>
             </div>
         </div>
     </header>
 
     <section>
-        <div class="welcome">
-            <a id="welcome"></a>
-            <div class="main-bg-img-container">
-                <img src="source/images/backgrounds/bg-light.jpeg" alt="">
-                <div class="dark-filter"></div>
+        <div class="skills" id="skills">
+            <div class="header">
+                <h4>My Skills</h4>
             </div>
 
-            <div class="welcome-text">
-                <h2>Welcome, stranger.</h2>
-                <p>I am ElecTro, a beginner developer.</p>
-            </div>
-        </div>
-
-        <div class="about">
-            <a id="about"></a>
-            <div class="cont-header">
-                <p>About me</p>
-            </div>
-
-            <div class="about-content">
-                <div class="persona-img">
-                    <img src="source/images/maninmask.png" alt="">
+            <div class="holder">
+                <div class="card">
+                    <img src="source/images/icons/csharpwithoutback.png" alt="">
+                    <ul>
+                        <li>Junior C#</li>
+                        <li>WPF</li>
+                        <li>Telegram Bots</li>
+                        <li>Still researching...</li>
+                    </ul>
                 </div>
-
-                <div class="persona-info">
-                    <h2>Call me ElecTro</h2>
-                    <p>I'm just a student who's main hobbies are gaming and coding. Basicly specialize on desktop application development using technologies such as WPF, UWP.</p>
+                <div class="line-vertical"></div>
+                <div class="card">
+                    <img src="source/images/icons/html5logo.png" alt="">
+                    <ul>
+                        <li>Basic HTML</li>
+                        <li>Basic CSS</li>
+                        <li>Bootstrap</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-
-        <div class="skills">
-            <a id="skills"></a>
-            <div class="cont-header">
-                <p>My skills</p>
-            </div>
-
-            <div class="skills-content">
-                <div class="section-bg-img-container">
-                    <img src="source/images/backgrounds/bg-anime-city.jpg" alt="">
-                    <div class="dark-filter"></div>
-                </div>
-
-                <div class="skill-container">
-                    <div class="upper-card">
-                        <p>HTML & CSS</p>
-                    </div>
-                    <div class="lower-card">
-                        <ul>
-                            <li>Basic HTML</li>
-                            <li>Basic CSS</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="skill-container">
-                    <div class="upper-card">
-                        <p>C#</p>
-                    </div>
-                    <div class="lower-card">
-                        <ul>
-                            <li>Basic C#</li>
-                            <li>WPF</li>
-                            <li>Coming soon</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="skill-container">
-                    <div class="upper-card">
-                        <p>War Thunder</p>
-                    </div>
-                    <div class="lower-card">
-                        <ul>
-                            <li>Professional Camping</li>
-                            <li>Professional 6.7 BR Camper</li>
-                            <li>I wrote it here just for fun</li>
-                        </ul>
-                    </div>
+                <div class="line-vertical"></div>
+                <div class="card">
+                    <img src="source/images/icons/questionmarklogo.png" alt="">
+                    <ul>
+                        <li>Unknown?</li>
+                        <li>Unknown?</li>
+                        <li>Unknown?</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <div class="projects">
-            <a id="projects"></a>
-            <div class="cont-header">
-                <p>My Projects</p>
+        <div class="projects" id="projects">
+            <div class="header">
+                <h4>My Projects</h4>
             </div>
 
-            <div class="projects-content">
-                <div class="section-bg-img-container">
-                    <img src="source/images/backgrounds/bg-anime-city-dark.png" alt="">
-                    <div class="dark-filter"></div>
-                </div>
-
-                <div class="project-container">
-                    <div class="project-card">
-                        <img src="source/images/projects/project_website.png" alt="">
+            <div class="holder">
+                <!-- Website -->
+                <a href="https://github.com/E1ecTro5/e1ectro5.github.io" target="_blank">
+                    <div class="card">
+                        <img src="source/images/backgrounds/thiswebsite.png" alt="">
                         <h4>This website</h4>
-                        <p>This website, which you are currently on.</p>
-
-                        <a href="https://github.com/E1ecTro5/e1ectro5.github.io" target="_blank">
-                            <div class="project-link">
-                                <p>Go to project</p>
-                            </div>
-                        </a>
+                        <p>The website, which you are currently on.</p>
                     </div>
-                </div>
-                <div class="project-container">
-                    <div class="project-card">
-                        <img src="source/images/projects/project_comingsoon.png" alt="">
-                        <h4>Coming soon</h4>
-                        <p>Once I'm done with something cool, it will be shown here.</p>
+                </a>
 
-                        <a href="#" target="_blank">
-                            <div class="project-link">
-                                <p>Go to project</p>
-                            </div>
-                        </a>
+                <div class="line-vertical"></div>
+
+                <!-- other projd -->
+                <a href="#" target="_blank">
+                    <div class="card">
+                        <img src="source/images/backgrounds/project_comingsoon.png" alt="">
+                        <h4>Coming Soon!</h4>
+                        <p>Once I'm done with something cool, I'll place it here.</p>
                     </div>
-                </div>
-                <div class="project-container">
-                    <div class="project-card">
-                        <img src="source/images/projects/project_comingsoon.png" alt="">
-                        <h4>Coming soon</h4>
-                        <p>Once I'm done with something cool, it will be shown here.</p>
+                </a>
 
-                        <a href="#" target="_blank">
-                            <div class="project-link">
-                                <p>Go to project</p>
-                            </div>
-                        </a>
+                <div class="line-vertical"></div>
+                
+                <!-- other proj -->
+                <a href="#" target="_blank">
+                    <div class="card">
+                        <img src="source/images/backgrounds/project_comingsoon.png" alt="">
+                        <h4>Coming Soon!</h4>
+                        <p>Once I'm done with something cool, I'll place it here.</p>
                     </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="contacts">
-            <a id="contacts"></a>
-            <div class="cont-header">
-                <p>Contacts</p>
-            </div>
-
-            <div class="contacts-content">
-                <p>Have to say something? You can find me here:</p>
-
-                <div class="contacts-links">
-                    <div class="contact-container">
-                        <img src="source/images/icons/gmail.png" alt="">
-                        <p style="margin-left: 0.9em;">abdulkerimovr7@gmail.com</p>
-                    </div>
-                    <a href="https://github.com/E1ecTro5" target="_blank">
-                        <div class="contact-container">
-                            <img src="source/images/icons/github.png" alt="">
-                            <p>E1ecTro5</p>
-                        </div>
-                    </a>
-                    <a href="https://steamcommunity.com/id/electro1228/" target="_blank">
-                        <div class="contact-container">
-                            <img src="source/images/icons/steam.png" alt="">
-                            <p>ElecTro</p>
-                        </div>
-                    </a>
-                    <a href="https://t.me/e1ectro5" target="_blank">
-                        <div class="contact-container">
-                            <img src="source/images/icons/telegram.png" alt="">
-                            <p>E1ecTro5</p>
-                        </div>
-                    </a>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="end">
-            <p>Website made by ElecTro | Rights aren't reserved : &#41; | 2024</p>
+    <footer id="contacts">
+        <div class="holder">
+            <div class="contacts">
+                <!-- Github -->
+                <a href="https://github.com/E1ecTro5" target="_blank">
+                    <img src="source/images/icons/githubLogo.png" alt="">
+                </a>
+                <!-- Telegram -->
+                <a href="https://t.me/e1ectro5" target="_blank">
+                    <img src="source/images/icons/telegramLogo.png" alt="">
+                </a>
+            </div>
+            <div class="rights">
+                <p>Website made by ElecTro. Rights aren't reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
