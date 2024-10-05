@@ -139,7 +139,7 @@ header>.holder {
 
 .skills>.holder {
     display: grid;
-    grid-template-columns: 4fr 1fr 4fr 1fr 4fr;
+    grid-template-columns: 4fr 1fr 4fr 1fr 4fr 1fr 4fr;
     justify-items: center;
     margin-inline: 2em;
 }
