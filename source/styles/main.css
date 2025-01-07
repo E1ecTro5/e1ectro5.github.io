@@ -6,3 +6,42 @@
 
     color: white;
 }
+
+.page {
+    background: radial-gradient(#000000 0%, #100d17 100%);
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    padding: 0em;
+
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar > a {
+    display: flex;
+    padding-inline: 2em;
+    
+    font-family: New Rocker;
+    font-size: 2em;
+    text-decoration: none;
+
+    align-items: center;
+}
+
+.navbar > ul {
+    display: flex;
+    align-items: center;
+
+    padding: 1em;
+}
+
+.navbar > ul > a {
+    text-decoration: none;
+    padding-inline: 1em;
+
+    font-family: New Rocker;
+    font-size: 2em;
+}
