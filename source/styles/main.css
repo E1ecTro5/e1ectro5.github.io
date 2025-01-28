@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Ubuntu;
     font-weight: bold;
 
     color: white;
@@ -21,21 +20,30 @@
 
 .navbar {
     display: flex;
-    padding: 0em;
 
     width: 100%;
     justify-content: space-between;
 }
 
-.navbar > a {
+.nav-item-holder  {
     display: flex;
+    padding-top: 1em;
     padding-inline: 2em;
     
-    font-family: New Rocker;
-    font-size: 2em;
-    text-decoration: none;
+    font-family: Audiowide;
+    font-size: 1.3em;
 
     align-items: center;
+}
+
+.navbar > .nav-item-holder > a, .navbar > ul > .nav-item-holder > a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 1s ease 0s;
+}
+
+.navbar > .nav-item-holder > a:hover, .navbar > ul > .nav-item-holder > a:hover {
+    color: #1957b3;
 }
 
 .navbar > ul {
@@ -45,13 +53,6 @@
     padding: 1em;
 }
 
-.navbar > ul > a {
-    text-decoration: none;
-    padding-inline: 1em;
-
-    font-family: New Rocker;
-    font-size: 2em;
-}
 
 @media (max-width: 700px) {
     .navbar > a {
