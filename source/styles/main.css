@@ -19,3 +19,25 @@
     color: white;
     text-decoration: none;
 }
+
+@media(max-width: 1200px) {
+    .navbar {
+        padding-inline: 10em;
+    }
+}
+
+@media(max-width: 800px) {
+    .navbar {
+        padding-inline: 1em;
+    }
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar > a {
+        font-size: 1em;
+    }
+}
