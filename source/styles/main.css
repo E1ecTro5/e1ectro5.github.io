@@ -3,4 +3,19 @@
     padding: 0;
 
     font-family: Audiowide;
+    background-color: #2d2d2d;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 40px;
+    padding-inline: 20em;
+}
+
+.navbar > a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
 }
