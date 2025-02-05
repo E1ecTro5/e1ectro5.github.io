@@ -3,6 +3,7 @@
     padding: 0;
 
     font-family: Audiowide;
+    color: white;
     background-color: #2d2d2d;
 }
 
@@ -16,8 +17,38 @@
 
 .navbar > a {
     font-size: 1.2em;
-    color: white;
     text-decoration: none;
+}
+
+.profile {
+    display: flex;
+    padding-top: 5em;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile > .text {
+    padding: 2em;
+}
+
+.profile > .text > h3 {
+    font-size: 6em;
+    font-weight: 500;
+}
+
+.profile > .text > p {
+    font-size: 2em;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.profile > .avatar {
+    max-width: 45%;
+}
+
+.profile > .avatar > img {
+    width: 100%;
 }
 
 @media(max-width: 1200px) {
