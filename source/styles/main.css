@@ -85,43 +85,6 @@ header>.holder {
     margin-top: 0.2em;
 }
 
-/* Skills section */
-
-.skills {
-    padding-bottom: 5em;
-    background-color: #111111;
-}
-
-.skills>.holder {
-    display: grid;
-    grid-template-columns: 4fr 1fr 4fr 1fr 4fr;
-    justify-items: center;
-    margin-inline: 2em;
-}
-
-.skills>.holder>.card {
-    text-align: center;
-    padding: 0.1em;
-}
-
-.skills>.holder>.card>h4 {
-    margin-block: 0.2em;
-    font-size: 3em;
-}
-
-.skills>.holder>.card>img {
-    max-width: 150px;
-    margin-block: 1em;
-}
-
-.skills>.holder>.card>ul {
-    text-align: start;
-}
-
-.skills>.holder>.card>ul>li {
-    margin-block: 0.2em;
-}
-
 /* Projects section */
 
 .projects {
