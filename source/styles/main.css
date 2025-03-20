@@ -40,24 +40,19 @@ header>.holder {
 }
 
 .navbar {
-    display: flex;
+    display: block;
     position: absolute;
     top: 0;
-    left: 0;
+    text-align: center;
 
     width: 100%;
-    justify-content: space-between;
 
     font-size: 1.2em;
 }
 
-.navbar>p {
-    padding: 2em;
-    font-family: Playwrite CU;
-}
-
 .navbar-items {
     display: flex;
+    justify-content: space-around;
 
     padding: 2em;
 }
