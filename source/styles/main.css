@@ -17,6 +17,7 @@
 
 .navbar {
     text-align: center;
+    max-height: 0vh;
 }
 
 .navbar > ul {
@@ -48,6 +49,66 @@
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
     animation: textGradient 2s ease-in-out infinite alternate;
+}
+
+.facade {
+    height: 100vh;
+}
+
+.facade > .holder {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    margin-inline: 2em;
+    font-family: Teko;
+}
+
+.facade > .holder > .f-text {
+    line-height: 0.7;
+}
+
+.facade > .holder > .f-text > h1 {
+    font-size: 6.7em;
+    font-weight: 500;
+}
+
+.facade > .holder > .f-text > p {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.contact-button, .resume-download-button {
+    font-family: Teko;
+    font-size: 2em;
+
+    margin-top: 0.2em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.contact-button {
+    color: white;
+    background-color: black;
+    padding-inline: 3em;
+}
+
+.contact-button:hover {
+    background: linear-gradient(33deg,
+    #592f69 0%,
+    #4000f0 100%);
+
+    background-size: 500% auto;
+    animation: textGradient 2s ease-in-out infinite alternate;
+}
+
+.resume-download-button {
+    padding-inline: 1em;
 }
 
 @keyframes textGradient {
