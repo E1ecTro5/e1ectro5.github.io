@@ -2,5 +2,22 @@
     margin: 0;
     padding: 0;
 
-    color: rgb(0, 0, 0);
+    color: white;
+    background: #293133;
+}
+
+.navbar {
+    display: flex;
+    margin: 2em;
+
+    justify-content: space-between;
+}
+
+.navbar > a {
+    margin-left: 1em;
+}
+
+.navbar > ul > li {
+    display: inline;
+    margin-inline: 1.5em;
 }
