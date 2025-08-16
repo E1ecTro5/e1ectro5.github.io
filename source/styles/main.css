@@ -14,6 +14,8 @@
     margin: 2em;
 
     justify-content: space-between;
+
+    height: 30vh;
 }
 
 .navbar a {
@@ -27,4 +29,30 @@
 .navbar > ul > li {
     display: inline;
     margin-inline: 1.5em;
+}
+
+.welcome {
+    display: block;
+    text-align: center;
+}
+
+.welcome > .header > h4 {
+    font-size: 4em;
+}
+
+.welcome, .about {
+    margin-inline: 20em;
+}
+
+.about > .holder {
+    display: flex;
+
+    border-radius: 10px;
+    background: linear-gradient(160deg, #899699 0%, #212526 100%);
+
+    padding: 1em;
+}
+
+.about > .holder > p {
+    background: transparent
 }
