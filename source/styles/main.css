@@ -3,15 +3,18 @@
     padding: 0;
 
     color: white;
-    background: #293133;
 
     font-family: "Cascadia Code";
     font-weight: 700;
 }
 
+.navbar, .about, .welcome {
+    background: #293133;
+}
+
 .navbar {
     display: flex;
-    margin: 2em;
+    padding: 2em;
 
     justify-content: space-between;
 
@@ -23,12 +26,12 @@
 }
 
 .navbar > a {
-    margin-left: 1em;
+    padding-left: 1em;
 }
 
 .navbar > ul > li {
     display: inline;
-    margin-inline: 1.5em;
+    padding-inline: 1.5em;
 }
 
 .welcome {
@@ -41,18 +44,27 @@
 }
 
 .welcome, .about {
-    margin-inline: 20em;
+    padding-inline: 20em;
 }
 
 .about > .holder {
     display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    height: 50vh; /* zaglushka */
 
     border-radius: 10px;
-    background: linear-gradient(160deg, #899699 0%, #212526 100%);
+    background: linear-gradient(170deg, rgb(120, 127, 129) 0%, #293133 100%);
 
     padding: 1em;
 }
 
 .about > .holder > p {
     background: transparent
+}
+
+.projects {
+    padding: 2em;
+    background: rgb(0, 0, 0);
 }
