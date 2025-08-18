@@ -52,11 +52,38 @@
     flex-direction: column;
     gap: 1em;
 
-    height: 50vh; /* zaglushka */
-
     padding: 1em;
 }
 
 .about > .holder > p {
     background: transparent
+}
+
+.contacts {
+    display: block;
+    padding: 1em;
+    background: #293133;
+    text-align: center;
+}
+
+.contacts > .holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.9em;
+}
+
+.contacts > .holder > p {
+    margin-right: 1em;
+}
+
+.contacts > .holder > ul > li {
+    display: inline;
+    margin-inline: 0.2em;
+}
+
+.contacts img {
+    max-width: 32px;
+    color: white;
 }
