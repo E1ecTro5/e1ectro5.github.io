@@ -54,17 +54,9 @@
 
     height: 50vh; /* zaglushka */
 
-    border-radius: 10px;
-    background: linear-gradient(170deg, rgb(120, 127, 129) 0%, #293133 100%);
-
     padding: 1em;
 }
 
 .about > .holder > p {
     background: transparent
-}
-
-.projects {
-    padding: 2em;
-    background: rgb(0, 0, 0);
 }
