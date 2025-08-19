@@ -8,8 +8,9 @@
     font-weight: 700;
 }
 
-.navbar, .about, .welcome {
-    background: #293133;
+.page {
+    height: 100vh;
+    background-color: #293133;
 }
 
 .navbar {
@@ -62,7 +63,6 @@
 .contacts {
     display: block;
     padding: 1em;
-    background: #293133;
     text-align: center;
 }
 
@@ -85,5 +85,4 @@
 
 .contacts img {
     max-width: 32px;
-    color: white;
 }
