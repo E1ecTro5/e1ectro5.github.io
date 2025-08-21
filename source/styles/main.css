@@ -23,8 +23,40 @@
     height: 20vh;
 }
 
-.navbar a {
+.navbar ul a {
     text-decoration: none;
+    color: #c2c2c2;
+    position: relative;
+    display: inline-block;
+}
+
+.navbar ul a:hover {
+    color: white;
+    transition: all 0.6s;
+
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.username {
+    display: inline-block;
+    height: fit-content;
+    text-decoration: none;
+}
+
+.username:hover {
+    background: linear-gradient(
+        to right,
+        #fff 20%,
+        #1164B4 30%,
+        #002F55 50%,
+        #0047AB 70%,
+        #fff 90%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: usernameAnim 3s ease-in-out infinite alternate;
 }
 
 .navbar > a {
@@ -87,4 +119,39 @@
 .contacts img {
     max-width: 24px;
     margin-top: 4px;
+}
+
+.animated-purple {
+    animation: purpleAnim 6s ease-in-out 1s infinite
+}
+
+@keyframes purpleAnim {
+    20%, 80% {
+        color: rgb(160, 4, 160);
+    }
+    0%, 100% {
+        color: #fff;
+    }
+}
+
+@keyframes usernameAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff,
+                 0 0 5px #fff,
+                 0 0 10px #fff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 20px #fff;
+  }
 }
