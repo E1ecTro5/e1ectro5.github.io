@@ -155,3 +155,17 @@
                  0 0 20px #fff;
   }
 }
+
+@media (max-width:1030px) {
+    .welcome > .header > h4 {
+        font-size: 3em;
+    }
+
+    .about > .holder > p {
+        font-size: 0.75em;
+    }
+
+    .welcome, .about {
+        padding-inline: 10em;
+    }
+}
