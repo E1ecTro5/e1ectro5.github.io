@@ -14,6 +14,9 @@
     background-color: #293133;
 }
 
+/* I guess you could just add username inside the ul and then make it special, i.e. add a class to that */
+/* Fix this in future pls */
+
 .navbar {
     display: flex;
     padding: 2em;
@@ -167,5 +170,58 @@
 
     .welcome, .about {
         padding-inline: 10em;
+    }
+
+    .contacts > .holder {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width:750px) {
+    .welcome > .header > h4 {
+        font-size: 3em;
+    }
+
+    .about > .holder > p {
+        font-size: 1em;
+    }
+
+    .welcome, .about {
+        padding-inline: 3em;
+    }
+}
+
+@media (max-width:400px) {
+    .navbar a {
+        font-size: 0.7em;
+        align-items: center;
+    }
+
+    .navbar > a {
+        margin-top: 4.5px;
+    }
+
+    .navbar > ul > li {
+        padding-inline: 1em;
+    }
+
+    .welcome > .header > h4 {
+        font-size: 2.5em;
+    }
+
+    .about > .holder > p {
+        font-size: 0.8em;
+    }
+    .welcome, .about {
+        padding-inline: 1em;
+    }
+
+    .contacts > .holder {
+        font-size: 0.6em;
+    }
+
+    .contacts img {
+        max-width: 20px;
+        margin-top: 4px;
     }
 }
