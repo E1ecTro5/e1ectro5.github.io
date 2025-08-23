@@ -1,0 +1,154 @@
+.welcome {
+    display: block;
+    text-align: center;
+}
+
+.welcome > .header > h4 {
+    font-size: 4em;
+}
+
+.welcome, .about {
+    padding-inline: 20em;
+}
+
+.about > .holder {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    padding: 1em;
+}
+
+.about > .holder > p {
+    background: transparent
+}
+
+.contacts {
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+
+.contacts > .holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.9em;
+}
+
+.contacts > .holder > p {
+    margin-right: 1em;
+}
+
+.contacts > .holder > ul > li {
+    display: inline;
+    margin-inline: 0.2em;
+}
+
+.contacts img {
+    max-width: 24px;
+    margin-top: 4px;
+}
+
+.animated-purple {
+    animation: purpleAnim 6s ease-in-out 1s infinite
+}
+
+@keyframes purpleAnim {
+    20%, 80% {
+        color: rgb(160, 4, 160);
+    }
+    0%, 100% {
+        color: #fff;
+    }
+}
+
+@keyframes usernameAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff,
+                 0 0 5px #fff,
+                 0 0 10px #fff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 20px #fff;
+  }
+}
+
+@media (max-width:1030px) {
+    .welcome > .header > h4 {
+        font-size: 3em;
+    }
+
+    .about > .holder > p {
+        font-size: 0.75em;
+    }
+
+    .welcome, .about {
+        padding-inline: 10em;
+    }
+
+    .contacts > .holder {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width:750px) {
+    .welcome > .header > h4 {
+        font-size: 3em;
+    }
+
+    .about > .holder > p {
+        font-size: 1em;
+    }
+
+    .welcome, .about {
+        padding-inline: 3em;
+    }
+}
+
+@media (max-width:400px) {
+    .navbar a {
+        font-size: 0.7em;
+        align-items: center;
+    }
+
+    .navbar > a {
+        margin-top: 4.5px;
+    }
+
+    .navbar > ul > li {
+        padding-inline: 1em;
+    }
+
+    .welcome > .header > h4 {
+        font-size: 2.5em;
+    }
+
+    .about > .holder > p {
+        font-size: 0.8em;
+    }
+    .welcome, .about {
+        padding-inline: 1em;
+    }
+
+    .contacts > .holder {
+        font-size: 0.6em;
+    }
+
+    .contacts img {
+        max-width: 20px;
+        margin-top: 4px;
+    }
+}
